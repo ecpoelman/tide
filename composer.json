@@ -1,0 +1,326 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "name": "dpc-sdp/tide_api",
+            "version": "3.0.11",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/dpc-sdp/tide_api.git"
+        },
+        {
+            "name": "dpc-sdp/tide_core",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/dpc-sdp/tide_core.git"
+        },
+        {
+            "name": "dpc-sdp/tide",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/dpc-sdp/tide.git"
+        },
+        {
+            "name": "dpc-sdp/tide_news",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/dpc-sdp/tide_news.git"
+        },
+        {
+            "name": "dpc-sdp/tide_authenticated_content",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/ecpoelman/tide_authenticated_content.git"
+        },
+        {
+            "name": "jquery.timepicker",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/timepicker",
+                "version": "1.13.14",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.timepicker"
+                },
+                "dist": {
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.13.14.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "jquery.textcounter",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/textcounter",
+                "version": "0.9.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.textcounter"
+                },
+                "dist": {
+                    "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.9.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "choices",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "choices/choices",
+                "version": "9.0.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "choices"
+                },
+                "dist": {
+                    "url": "https://github.com/jshjohnson/Choices/archive/v9.0.1.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "codemirror",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "codemirror/codemirror",
+                "version": "5.53.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/components/codemirror/archive/5.53.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "jquery.inputmask",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/inputmask",
+                "version": "5.0.5",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.inputmask"
+                },
+                "dist": {
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/5.0.5.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "jquery.intl-tel-input",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/intl-tel-input",
+                "version": "16.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.intl-tel-input"
+                },
+                "dist": {
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v16.1.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "name": "progress-tracker",
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "progress-tracker/progress-tracker",
+                "version": "1.4.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "progress-tracker"
+                },
+                "dist": {
+                    "url": "https://github.com/NigelOToole/progress-tracker/archive/v1.4.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/ckeditor_templates",
+                "version": "1.x-dev",
+                "type": "drupal-module",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/issue/ckeditor_templates-3296778.git",
+                    "reference": "567b63b96949f625ed6aa00af9385e1e59c971f5"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/templates",
+                "type": "drupal-library",
+                "version": "4.11.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.11.1.zip",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "name": "drupal/token_conditions",
+            "type": "vcs",
+            "no-api": true,
+            "url": "https://github.com/dpc-sdp/token_conditions.git",
+            "exclude": [
+                "dev-1.x",
+                "1.x-dev"
+            ]
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+         {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "ckeditor/templates": "^4.11",
+        "composer/installers": "^1.9",
+        "dpc-sdp/tide": "3.2.11",
+        "dpc-sdp/tide_core": "3.2.9",
+        "drupal/ckeditor_templates": "^1.2",
+        "drupal/core-composer-scaffold": "^9.5",
+        "drupal/core-project-message": "^9.5",
+        "drupal/core-recommended": "^9.5",
+        "drupal/entity_embed": "^1.x-dev",
+        "drupal/fast_404": "^2.0",
+        "drupal/schemata": "^1.0-alpha2",
+        "drupal/simple_sitemap": "4.x-dev@dev",
+        "drupal/token_conditions": "dev-compatible-with-drupal-9",
+        "drupal/wysiwyg_template": "^3.0@RC",
+        "drush/drush": "^11.6"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "patches": {
+            "drupal/jwt": {
+                "Adding configuration for the JWT timeout - https://www.drupal.org/project/jwt/issues/2782571#comment-14484194": "https://www.drupal.org/files/issues/2022-04-17/2782571-37.patch",
+                "Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated - https://www.drupal.org/project/jwt/issues/3298726#comment-14619704": "https://www.drupal.org/files/issues/2022-07-22/3298726-3.patch"
+            },
+            "drupal/ckeditor_templates": {
+                "CKEditor 5 support for Content Templates - https://www.drupal.org/project/ckeditor_templates/issues/3273358#comment-14963779": "./patches/ckeditor_templates/ckeditor_templates_4.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}
